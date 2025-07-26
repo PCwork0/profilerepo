@@ -9,14 +9,22 @@
       }
     },
     {
-      "src": "api/*.py",
-      "use": "@vercel/python"
+      "src": "api/*.ts",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/index.py"
+      "src": "/api/portfolio",
+      "dest": "/api/portfolio.ts"
+    },
+    {
+      "src": "/api/resume",
+      "dest": "/api/resume.ts"
+    },
+    {
+      "src": "/api/contact",
+      "dest": "/api/contact.ts"
     },
     {
       "src": "/static/(.*)",
@@ -28,12 +36,11 @@
     }
   ],
   "functions": {
-    "api/*.py": {
-      "runtime": "python3.9"
+    "api/*.ts": {
+      "runtime": "nodejs18.x"
     }
   },
   "outputDirectory": "frontend/build",
   "installCommand": "cd frontend && yarn install",
-  "buildCommand": "cd frontend && yarn build",
-  "framework": null
+  "buildCommand": "cd frontend && yarn build"
 }
