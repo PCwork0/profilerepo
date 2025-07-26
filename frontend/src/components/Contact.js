@@ -27,7 +27,7 @@ const Contact = ({ contactInfo }) => {
     setSubmitStatus(null);
 
     try {
-      await axios.post(`${API_BASE_URL}/api/contact`, {
+      await axios.post(`${API_BASE_URL}/contact`, {
         ...formData,
         timestamp: new Date().toISOString()
       });
