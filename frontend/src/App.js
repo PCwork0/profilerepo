@@ -25,7 +25,7 @@ function App() {
   const fetchPortfolioData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`${API_BASE_URL}/api/portfolio`);
+      const response = await axios.get(`${API_BASE_URL}/portfolio`);
       setPortfolioData(response.data);
       setError(null);
     } catch (err) {
