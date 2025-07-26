@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Purna Boyapati",
     "label": "Principal Software Engineer",
@@ -14,15 +15,21 @@
       "countryCode": "IN",
       "region": "Telangana"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "purnaboyapati",
+        "url": "https://linkedin.com/in/purnaboyapati"
+      }
+    ]
   },
   "work": [
     {
       "name": "Appfire",
       "position": "Principal Software Engineer",
-      "url": "",
+      "url": "https://appfire.com",
       "startDate": "2019-09-01",
-      "endDate": "",
+      "endDate": null,
       "summary": "Building Appfire Connect Framework and apps to deliver Atlassian Cloud Apps. Leading serverless development and AWS infrastructure implementation.",
       "highlights": [
         "Building Appfire Connect Framework and apps to deliver Atlassian Cloud Apps",
@@ -38,7 +45,7 @@
     {
       "name": "OpenText",
       "position": "Staff Software Engineer",
-      "url": "",
+      "url": "https://opentext.com",
       "startDate": "2017-01-01",
       "endDate": "2019-08-31",
       "summary": "Worked on web application development for administration tool for different analytic products.",
@@ -78,7 +85,7 @@
     {
       "name": "Nokia",
       "position": "R & D Engineer III",
-      "url": "",
+      "url": "https://nokia.com",
       "startDate": "2011-03-01",
       "endDate": "2013-02-28",
       "summary": "Research and development role in telecommunications technology.",
@@ -87,7 +94,7 @@
     {
       "name": "Nokia",
       "position": "R&D Engineer II",
-      "url": "",
+      "url": "https://nokia.com",
       "startDate": "2009-02-01",
       "endDate": "2011-02-28",
       "summary": "Research and development role in telecommunications technology.",
@@ -96,7 +103,7 @@
     {
       "name": "Sasken Communication Technologies Ltd",
       "position": "Engineer Software",
-      "url": "",
+      "url": "https://sasken.com",
       "startDate": "2006-10-01",
       "endDate": "2009-02-28",
       "summary": "Software engineering role in communication technologies.",
@@ -107,7 +114,7 @@
   "education": [
     {
       "institution": "Jawaharlal Nehru Technological University",
-      "url": "",
+      "url": "https://jntuh.ac.in",
       "area": "Software Engineering",
       "studyType": "MSIT",
       "startDate": "2004-01-01",
@@ -131,31 +138,31 @@
     {
       "name": "Learning the OWASP Top 10",
       "date": "",
-      "issuer": "",
+      "issuer": "Online Course Platform",
       "url": ""
     },
     {
       "name": "Introduction to Data Science",
       "date": "",
-      "issuer": "",
+      "issuer": "Online Course Platform",
       "url": ""
     },
     {
       "name": "Machine Learning Foundations: A Case Study Approach",
       "date": "",
-      "issuer": "",
+      "issuer": "Online Course Platform",
       "url": ""
     },
     {
       "name": "The Data Scientist's Toolbox",
       "date": "",
-      "issuer": "",
+      "issuer": "Online Course Platform",
       "url": ""
     },
     {
       "name": "A Life of Happiness and Fulfillment",
       "date": "",
-      "issuer": "",
+      "issuer": "Online Course Platform",
       "url": ""
     }
   ],
@@ -164,7 +171,7 @@
     {
       "name": "Programming Languages",
       "level": "Expert",
-      "keywords": ["Java", "Groovy", "JavaScript", "NodeJS"]
+      "keywords": ["Java", "Groovy", "JavaScript", "NodeJS", "TypeScript"]
     },
     {
       "name": "Frameworks & Libraries",
@@ -216,12 +223,21 @@
       "fluency": "Native"
     }
   ],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Technology",
+      "keywords": ["Cloud Computing", "Serverless Architecture", "Open Source"]
+    },
+    {
+      "name": "Professional Development",
+      "keywords": ["Continuous Learning", "Mentoring", "Technical Leadership"]
+    }
+  ],
   "references": [],
   "projects": [],
   "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "version": "v1.0.0",
-    "lastModified": "2024-01-01T00:00:00.000Z"
+    "lastModified": "2025-01-26T00:00:00.000Z"
   }
 }
