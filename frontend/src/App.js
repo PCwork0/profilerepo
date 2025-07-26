@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import LoadingSpinner from './components/LoadingSpinner';
 
-const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8001';
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || '/api';
 
 function App() {
   const [portfolioData, setPortfolioData] = useState(null);
