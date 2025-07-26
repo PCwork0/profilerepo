@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #f7f7fa;
-  color: #444950;
+  color: #2d3748;
 }
 
 code {
@@ -21,17 +21,17 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: #ececec;
+  background: #e2e8f0;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d1d5db;
+  background: #a0aec0;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #bfc8d9;
+  background: #718096;
 }
 
 * {
@@ -40,7 +40,7 @@ code {
 
 button:focus,
 a:focus {
-  outline: 2px solid #23272f;
+  outline: 2px solid #2d3748;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -49,7 +49,7 @@ a:focus {
   background: #fff;
   border-radius: 1.25rem;
   box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.06);
-  border: 1px solid #ececec;
+  border: 1px solid #e2e8f0;
   transition: box-shadow 0.15s, transform 0.15s;
 }
 
@@ -60,17 +60,17 @@ a:focus {
 
 .gradient-text {
   background: none;
-  color: #23272f;
+  color: #1a202c;
   font-weight: 700;
 }
 
 .bg-blue-100, .bg-green-100, .bg-yellow-100, .bg-purple-100, .bg-red-100, .bg-indigo-100, .bg-teal-100, .bg-pink-100 {
-  background: #f4f6fa !important;
-  color: #23272f !important;
+  background: #edf2f7 !important;
+  color: #2d3748 !important;
 }
 
 .text-blue-600, .text-green-600, .text-yellow-600, .text-purple-600, .text-red-600, .text-indigo-600, .text-teal-600, .text-pink-600 {
-  color: #23272f !important;
+  color: #2d3748 !important;
 }
 
 .bg-gradient-to-br, .bg-gradient-to-r {
@@ -82,8 +82,8 @@ a:focus {
 }
 
 button {
-  background: #e2e8f0;
-  color: #23272f;
+  background: #2d3748;
+  color: #fff;
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -94,8 +94,8 @@ button {
 }
 
 button:hover {
-  background: #bfc8d9;
-  color: #23272f;
+  background: #1a202c;
+  color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px 0 rgba(44, 62, 80, 0.10);
 }
@@ -105,7 +105,7 @@ section {
   background: #fff;
   border-radius: 1.25rem;
   box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.06);
-  border: 1px solid #ececec;
+  border: 1px solid #e2e8f0;
   margin-bottom: 2.5rem;
   padding: 2.5rem 2rem;
 }
@@ -122,7 +122,7 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #23272f;
+  color: #1a202c;
   font-family: Inter, system-ui, sans-serif;
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -144,7 +144,7 @@ h3 {
 li {
   animation: slideInLeft 0.4s ease-out;
   animation-fill-mode: both;
-  color: #444950;
+  color: #2d3748;
 }
 
 li:nth-child(1) { animation-delay: 0.08s; }
@@ -227,8 +227,8 @@ li:nth-child(5) { animation-delay: 0.40s; }
 .skill-badge {
   position: relative;
   overflow: hidden;
-  background: #f4f6fa;
-  color: #23272f;
+  background: #edf2f7;
+  color: #2d3748;
   border-radius: 0.5rem;
   padding: 0.25rem 0.75rem;
   font-size: 0.95em;
