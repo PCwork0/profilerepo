@@ -44,7 +44,7 @@ const Contact = ({ contactInfo }) => {
 
   const downloadJsonResume = async () => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/api/resume/json`);
+      const response = await axios.get(`${API_BASE_URL}/resume`);
       const jsonData = JSON.stringify(response.data, null, 2);
       
       const blob = new Blob([jsonData], { type: 'application/json' });
