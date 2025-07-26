@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Simple Vercel deployment script for TypeScript Portfolio
+# Purna Portfolio - Frontend Deployment Script
+# Deploys to Vercel with JSON Resume integration
 
-echo "🚀 Deploying Purna Boyapati Portfolio to Vercel..."
-echo "📋 Using TypeScript + JSON Resume Standard"
+echo "🚀 Deploying Purna Portfolio to Vercel..."
 
 # Check if Vercel CLI is installed
 if ! command -v vercel &> /dev/null; then
@@ -11,44 +11,17 @@ if ! command -v vercel &> /dev/null; then
     npm install -g vercel
 fi
 
-# Install dependencies
-echo "📦 Installing dependencies..."
-yarn install
-
-# Install frontend dependencies
-echo "📦 Installing frontend dependencies..."
-cd frontend && yarn install && cd ..
-
 # Build the frontend
-echo "🔨 Building frontend..."
-cd frontend && yarn build && cd ..
-
-# Validate JSON Resume format
-echo "✅ Validating JSON Resume format..."
-if command -v jq &> /dev/null; then
-    jq . data/resume.json > /dev/null && echo "✅ JSON Resume is valid" || echo "❌ JSON Resume has syntax errors"
-else
-    echo "ℹ️  jq not found, skipping JSON validation"
-fi
+echo "📦 Building frontend..."
+cd frontend
+npm install
+npm run build
+cd ..
 
 # Deploy to Vercel
 echo "🌐 Deploying to Vercel..."
 vercel --prod
 
-echo ""
-echo "🎉 Deployment complete!"
-echo ""
-echo "✅ Features deployed:"
-echo "   📄 JSON Resume Standard (jsonresume.org compliant)"
-echo "   🎨 Modern React Frontend"
-echo "   ⚡ TypeScript Serverless API"
-echo "   📱 Responsive Design"
-echo "   💼 Professional Portfolio"
-echo "   📥 JSON Resume Download"
-echo "   📧 Contact Form"
-echo ""
-echo "🔗 Test your deployment:"
-echo "   • Visit the portfolio URL"
-echo "   • Download JSON Resume"
-echo "   • Test contact form"
-echo "   • Verify all sections load"
+echo "✅ Deployment complete!"
+echo "📄 Your portfolio is now live!"
+echo "🔗 JSON Resume available at: https://your-domain.vercel.app/resume.json"

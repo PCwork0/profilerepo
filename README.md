@@ -5,17 +5,15 @@ A modern, professional portfolio website following the **JSON Resume Standard** 
 ## 🌟 Features
 
 - **JSON Resume Standard**: Fully compliant with jsonresume.org schema v1.0.0
-- **TypeScript API**: Clean serverless functions for Vercel
-- **Modern React Frontend**: Beautiful, responsive design
-- **Zero Database**: Simple JSON file storage
+- **Simple React Frontend**: Beautiful, responsive design
+- **Zero Backend**: Direct JSON file integration
 - **Professional Portfolio**: 18+ years of experience showcase
 - **One-Click Download**: JSON Resume format download
-- **Contact Form**: Simple form with file-based storage
+- **Vercel Ready**: Zero-config deployment
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 18 + Tailwind CSS + TypeScript
-- **Backend**: Vercel Functions (TypeScript/Node.js)
+- **Frontend**: React 18 + Tailwind CSS
 - **Data**: JSON Resume Standard format
 - **Deployment**: Vercel (zero-config)
 
@@ -62,15 +60,11 @@ This portfolio follows the official JSON Resume schema from [jsonresume.org](htt
 
 ```
 /
-├── api/                    # Vercel TypeScript functions
-│   ├── portfolio.ts       # Portfolio data transformation
-│   ├── resume.ts          # JSON Resume endpoint
-│   └── contact.ts         # Contact form handler
 ├── data/
-│   ├── resume.json        # JSON Resume standard data
-│   └── contacts/          # Contact form submissions
+│   └── resume.json        # JSON Resume standard data
 ├── frontend/              # React application
-│   ├── src/components/    # Portfolio components
+│   ├── src/              # React source code
+│   ├── public/           # Static assets
 │   └── build/            # Production build
 ├── vercel.json           # Vercel deployment config
 └── deploy.sh             # Deployment script
@@ -80,19 +74,16 @@ This portfolio follows the official JSON Resume schema from [jsonresume.org](htt
 
 ```bash
 # Install dependencies
-yarn install
-cd frontend && yarn install && cd ..
+cd frontend && npm install
 
 # Start development
-cd frontend && yarn start    # Frontend: http://localhost:3000
-vercel dev                   # API: http://localhost:3000/api/*
+cd frontend && npm start    # Frontend: http://localhost:3000
 ```
 
-## 📊 API Endpoints
+## 📊 Data Access
 
-- **`GET /api/portfolio`** - Portfolio UI format
-- **`GET /api/resume`** - JSON Resume standard format
-- **`POST /api/contact`** - Contact form submission
+- **`/resume.json`** - Direct access to JSON Resume data
+- **Download Button** - One-click JSON Resume download
 
 ## 🎨 Customization
 
@@ -105,21 +96,21 @@ jq . data/resume.json
 ```
 
 ### Modify Styling
-Update React components in `/frontend/src/components/`
+Update React components in `/frontend/src/App.js`
 
 ### Add Sections
-Create new components following the existing pattern
+Modify the App.js file to add new sections
 
 ## 📱 Features
 
 ### Portfolio Sections
-1. **Hero**: Name, title, contact, summary
+1. **Header**: Name, title, summary, download button
 2. **About**: Detailed background and achievements  
 3. **Experience**: 18+ years across 7 companies
 4. **Skills**: Categorized technical expertise
 5. **Education**: Academic background
 6. **Certifications**: Professional development
-7. **Contact**: Form + JSON Resume download
+7. **Contact**: Contact information and social profiles
 
 ### JSON Resume Integration
 - **Download Button**: Get resume in standard JSON format
@@ -130,8 +121,7 @@ Create new components following the existing pattern
 ## 🌐 Deployment Features
 
 - **Zero Config**: Works out of the box on Vercel
-- **TypeScript**: Type-safe API functions
-- **Edge Functions**: Fast global response times
+- **Static Site**: Fast global response times
 - **Automatic Builds**: GitHub integration
 - **Custom Domains**: Easy setup
 
@@ -144,9 +134,9 @@ Create new components following the existing pattern
 
 ## 🔒 Privacy & Security
 
-- **No Database**: Simple file-based storage
+- **No Backend**: Simple file-based data
 - **No Tracking**: Privacy-focused design
-- **Secure Forms**: Server-side validation
+- **Static Site**: No server-side processing
 - **HTTPS**: Secure by default on Vercel
 
 ## 📞 Professional Info
