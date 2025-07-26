@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-01",
+  "project": {
+    "name": "Personal Portfolio",
+    "description": "Personal portfolio website showcasing projects, skills, and experience",
+    "techStack": ["javascript", "react", "html", "css"],
+    "environment": "development",
+    "repository": "profilerepo"
+  },
+  "context": {
+    "currentTask": "Setting up personal portfolio with cursor rules and memory bank system",
+    "importantNotes": [
+      "Cursor rules system provides consistent development practices for portfolio development",
+      "Memory bank stores persistent context and reusable portfolio components",
+      "Portfolio should showcase projects, skills, and professional experience"
+    ],
+    "recentChanges": [
+      "Created cursor-rules folder structure",
+      "Created memory-bank folder structure",
+      "Updated context for personal portfolio purpose"
+    ]
+  },
+  "settings": {
+    "autoSave": true,
+    "contextRetention": "30 days",
+    "snippetCategories": ["utility", "component", "ui", "animation", "portfolio"]
+  }
+} 

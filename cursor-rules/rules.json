@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "description": "Cursor rules configuration for development practices",
+  "rules": [
+    {
+      "name": "Code Style",
+      "description": "Enforce consistent code formatting and style",
+      "pattern": "*.{js,ts,jsx,tsx}",
+      "action": "Apply consistent indentation and formatting"
+    },
+    {
+      "name": "Documentation",
+      "description": "Ensure functions and classes have proper documentation",
+      "pattern": "*.{js,ts,jsx,tsx}",
+      "action": "Add JSDoc comments for public functions and classes"
+    }
+  ],
+  "settings": {
+    "autoFormat": true,
+    "lintOnSave": true,
+    "suggestions": true
+  }
+} 
