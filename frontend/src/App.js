@@ -251,25 +251,6 @@ function App() {
               </section>
             )}
 
-            {/* Awards */}
-            {awards && awards.length > 0 && (
-              <section className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                  <span className="bg-yellow-100 text-yellow-600 p-2 rounded-lg mr-3">🏆</span>
-                  Awards
-                </h2>
-                <div className="space-y-4">
-                  {awards.map((award, index) => (
-                    <div key={index} className="border-l-4 border-yellow-500 pl-4">
-                      <h3 className="font-bold text-gray-900">{award.title}</h3>
-                      <p className="text-sm text-gray-600">{award.awarder} • {award.date}</p>
-                      <p className="text-sm text-gray-700 mt-1">{award.summary}</p>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-
             {/* Certificates */}
             {certificates && certificates.length > 0 && (
               <section className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
