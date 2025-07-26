@@ -1,0 +1,16 @@
+{
+  "name": "purna-boyapati-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && yarn start",
+    "build": "cd frontend && yarn build",
+    "start": "cd frontend && yarn start",
+    "vercel-build": "cd frontend && yarn install && yarn build"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  }
+}
