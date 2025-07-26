@@ -13,3 +13,6 @@ __pycache__/
 .pytest_cache/
 test_result.md
 backend_test.py
+*.py
+requirements.txt
+.emergent/

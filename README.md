@@ -1,180 +1,174 @@
 # Purna Boyapati - Portfolio Website
 
-A modern, responsive portfolio website showcasing 18+ years of software engineering experience with JSON Resume format support.
+A modern, professional portfolio website following the **JSON Resume Standard** from [jsonresume.org](https://jsonresume.org).
 
 ## 🌟 Features
 
-- **Professional Portfolio**: Complete showcase of experience, skills, and achievements
-- **JSON Resume Format**: Download resume data in standardized JSON Resume schema v1.0.0
-- **Modern Design**: Purple gradient theme with smooth animations and responsive layout
-- **Contact Form**: Integrated contact form with form submission handling
-- **Vercel Ready**: Optimized for easy deployment on Vercel platform
+- **JSON Resume Standard**: Fully compliant with jsonresume.org schema v1.0.0
+- **TypeScript API**: Clean serverless functions for Vercel
+- **Modern React Frontend**: Beautiful, responsive design
+- **Zero Database**: Simple JSON file storage
+- **Professional Portfolio**: 18+ years of experience showcase
+- **One-Click Download**: JSON Resume format download
+- **Contact Form**: Simple form with file-based storage
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 18, Tailwind CSS, React Icons, Framer Motion
-- **Backend**: FastAPI (Serverless functions for Vercel)
-- **Data Storage**: JSON files (no database required)
-- **Deployment**: Vercel-optimized configuration
-
-## 📋 Portfolio Sections
-
-1. **Hero Section**: Name, title, contact info, and professional summary
-2. **About Me**: Detailed background and key achievements
-3. **Experience**: 18+ years across 7 companies with detailed responsibilities
-4. **Skills**: Categorized technical skills with proficiency indicators
-5. **Education**: B.Tech and MSIT degrees with institution details
-6. **Certifications**: 5 professional certifications including OWASP and Data Science
-7. **Contact**: Contact form with JSON resume download functionality
+- **Frontend**: React 18 + Tailwind CSS + TypeScript
+- **Backend**: Vercel Functions (TypeScript/Node.js)
+- **Data**: JSON Resume Standard format
+- **Deployment**: Vercel (zero-config)
 
 ## 🚀 Quick Deploy to Vercel
 
-### Prerequisites
-- Node.js 14+ installed
-- Vercel account
+### Option 1: Vercel CLI (Recommended)
+```bash
+# Install Vercel CLI
+npm install -g vercel
 
-### Deployment Steps
+# Deploy
+./deploy.sh
+```
 
-1. **Clone and Install**:
-   ```bash
-   git clone <repository-url>
-   cd portfolio
-   npm install
-   ```
+### Option 2: GitHub Integration
+1. Push to GitHub
+2. Import project in Vercel dashboard  
+3. Deploy automatically
 
-2. **Install Vercel CLI**:
-   ```bash
-   npm i -g vercel
-   ```
+## 📄 JSON Resume Standard
 
-3. **Deploy**:
-   ```bash
-   vercel
-   ```
+This portfolio follows the official JSON Resume schema from [jsonresume.org](https://jsonresume.org):
 
-4. **Follow prompts**:
-   - Set up and deploy: Y
-   - Which scope: Your username
-   - Link to existing project: N
-   - Project name: purna-boyapati-portfolio
-   - Directory: ./
-   - Override settings: N
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": { ... },
+  "work": [ ... ],
+  "education": [ ... ],
+  "skills": [ ... ],
+  "certificates": [ ... ],
+  "languages": [ ... ]
+}
+```
 
-### Alternative: GitHub Integration
-
-1. Fork this repository
-2. Connect your GitHub account to Vercel
-3. Import the project in Vercel dashboard
-4. Deploy automatically
+### Benefits of JSON Resume Standard:
+- **ATS Compatible**: Easily parsed by Applicant Tracking Systems
+- **Standard Format**: Recognized by HR tools and platforms
+- **Portable**: Use with other JSON Resume tools and themes
+- **Machine Readable**: Perfect for automated processing
+- **Developer Friendly**: Version controlled resume data
 
 ## 📁 Project Structure
 
 ```
 /
-├── api/                    # Vercel serverless functions
-│   └── index.py           # FastAPI backend
-├── data/                  # JSON data storage
-│   ├── resume.json        # JSON Resume format data
+├── api/                    # Vercel TypeScript functions
+│   ├── portfolio.ts       # Portfolio data transformation
+│   ├── resume.ts          # JSON Resume endpoint
+│   └── contact.ts         # Contact form handler
+├── data/
+│   ├── resume.json        # JSON Resume standard data
 │   └── contacts/          # Contact form submissions
 ├── frontend/              # React application
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── public/
-│   ├── package.json
-│   └── tailwind.config.js
-├── vercel.json           # Vercel configuration
-├── package.json          # Root package.json
-└── requirements.txt      # Python dependencies
+│   ├── src/components/    # Portfolio components
+│   └── build/            # Production build
+├── vercel.json           # Vercel deployment config
+└── deploy.sh             # Deployment script
 ```
 
 ## 🔧 Local Development
 
-1. **Install dependencies**:
-   ```bash
-   cd frontend && yarn install
-   pip install -r requirements.txt
-   ```
+```bash
+# Install dependencies
+yarn install
+cd frontend && yarn install && cd ..
 
-2. **Start development servers**:
-   ```bash
-   # Frontend (React)
-   cd frontend && yarn start
-
-   # Backend (FastAPI) 
-   uvicorn api.index:app --reload --port 8001
-   ```
-
-3. **Open browser**:
-   - Frontend: http://localhost:3000
-   - Backend API: http://localhost:8001
+# Start development
+cd frontend && yarn start    # Frontend: http://localhost:3000
+vercel dev                   # API: http://localhost:3000/api/*
+```
 
 ## 📊 API Endpoints
 
-- `GET /api/portfolio` - Portfolio data in custom format
-- `GET /api/resume/json` - JSON Resume format data
-- `POST /api/contact` - Contact form submission
+- **`GET /api/portfolio`** - Portfolio UI format
+- **`GET /api/resume`** - JSON Resume standard format
+- **`POST /api/contact`** - Contact form submission
 
 ## 🎨 Customization
 
-### Update Portfolio Data
-Edit `/data/resume.json` following JSON Resume schema v1.0.0
+### Update Resume Data
+Edit `/data/resume.json` following the JSON Resume schema:
+
+```bash
+# Validate your changes
+jq . data/resume.json
+```
 
 ### Modify Styling
-Update Tailwind classes in React components or modify `tailwind.config.js`
+Update React components in `/frontend/src/components/`
 
-### Add New Sections
-Create new React components and add to main App.js
+### Add Sections
+Create new components following the existing pattern
 
-## 📱 Responsive Design
+## 📱 Features
 
-- **Desktop**: Full layout with all sections
-- **Tablet**: Responsive grid layouts
-- **Mobile**: Stacked layout with mobile navigation
+### Portfolio Sections
+1. **Hero**: Name, title, contact, summary
+2. **About**: Detailed background and achievements  
+3. **Experience**: 18+ years across 7 companies
+4. **Skills**: Categorized technical expertise
+5. **Education**: Academic background
+6. **Certifications**: Professional development
+7. **Contact**: Form + JSON Resume download
 
-## 🔒 Privacy & Data
+### JSON Resume Integration
+- **Download Button**: Get resume in standard JSON format
+- **API Access**: Programmatic access to resume data
+- **Schema Validation**: Ensures data integrity
+- **Tool Compatibility**: Works with JSON Resume ecosystem
 
-- No external databases required
-- Contact form data stored in JSON files
-- No third-party tracking or analytics
-- Privacy-focused design
+## 🌐 Deployment Features
+
+- **Zero Config**: Works out of the box on Vercel
+- **TypeScript**: Type-safe API functions
+- **Edge Functions**: Fast global response times
+- **Automatic Builds**: GitHub integration
+- **Custom Domains**: Easy setup
 
 ## 📈 Performance
 
-- **Lighthouse Score**: 95+ across all metrics
-- **Fast Loading**: Optimized images and code splitting
-- **SEO Optimized**: Meta tags and semantic HTML
-- **Accessible**: WCAG 2.1 compliant
+- **Lighthouse**: 95+ scores across all metrics
+- **Fast Loading**: Optimized React build
+- **SEO Ready**: Meta tags & semantic HTML
+- **Mobile First**: Responsive design
 
-## 📄 JSON Resume Schema
+## 🔒 Privacy & Security
 
-Fully compliant with JSON Resume Schema v1.0.0:
-- Basics (name, contact, summary)
-- Work experience with highlights
-- Education history
-- Skills with keywords
-- Certifications
-- Languages
+- **No Database**: Simple file-based storage
+- **No Tracking**: Privacy-focused design
+- **Secure Forms**: Server-side validation
+- **HTTPS**: Secure by default on Vercel
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📞 Contact
+## 📞 Professional Info
 
 - **Name**: Purna Boyapati
 - **Title**: Principal Software Engineer
+- **Experience**: 18+ years in software development
 - **Location**: Hyderabad, Telangana, India
-- **Phone**: 9160278155 (Home)
+- **Specialties**: Java, Spring Boot, AWS, ReactJS, Microservices
+
+## 🤝 JSON Resume Community
+
+This project is part of the JSON Resume ecosystem:
+- [JSON Resume](https://jsonresume.org) - Official website
+- [Schema](https://github.com/jsonresume/resume-schema) - Schema repository
+- [Registry](https://registry.jsonresume.org) - Public resume registry
+- [Themes](https://jsonresume.org/themes/) - Community themes
 
 ## 📄 License
 
-This project is open source and available under the MIT License.
+MIT License - Feel free to use this as a template for your own portfolio!
 
 ---
 
-**Built with ❤️ using React, FastAPI, and modern web technologies**
+**Built with ❤️ following JSON Resume Standard**
