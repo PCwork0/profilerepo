@@ -2,8 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Purna Boyapati",
-    "label": "Principal Software Engineer",
-    "email": "purna.boyapati@gmail.com",
+    "label": "Principal Software Engineer @ Appfire",
+    "email": "bpcrao@gmail.com",
     "url": "https://purnaboyapati.dev",
     "summary": "Principal Software Engineer with 18+ years of experience in full-stack development, cloud architecture, and technical leadership.",
     "location": {
@@ -21,7 +21,7 @@
       {
         "network": "GitHub",
         "username": "purnaboyapati",
-        "url": "https://github.com/purnaboyapati"
+        "url": "https://github.com/bpcrao"
       }
     ]
   },

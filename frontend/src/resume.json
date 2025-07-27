@@ -2,15 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Purna Boyapati",
-    "label": "Principal Software Engineer",
-    "image": "",
-    "email": "purna.boyapati@gmail.com",
-    "phone": "",
+    "label": "Principal Software Engineer @ Appfire",
+    "email": "bpcrao@gmail.com",
     "url": "https://purnaboyapati.dev",
-    "summary": "Principal Software Engineer with 18+ years of experience in full-stack development, cloud architecture, and technical leadership. Expert in Java, Spring Boot, AWS, React, and microservices. Proven track record of delivering scalable solutions and leading development teams in enterprise environments.",
+    "summary": "Principal Software Engineer with 18+ years of experience in full-stack development, cloud architecture, and technical leadership.",
     "location": {
       "address": "Hyderabad, Telangana",
-      "postalCode": "",
       "city": "Hyderabad",
       "countryCode": "IN",
       "region": "Telangana"
@@ -24,7 +21,7 @@
       {
         "network": "GitHub",
         "username": "purnaboyapati",
-        "url": "https://github.com/purnaboyapati"
+        "url": "https://github.com/bpcrao"
       }
     ]
   },
@@ -35,17 +32,7 @@
       "url": "https://appfire.com",
       "startDate": "2019-09-01",
       "endDate": null,
-      "summary": "Architecting and engineering Appfire Connect Framework for Atlassian Cloud Apps with serverless AWS infrastructure.",
-      "highlights": [
-        "Engineered Appfire Connect Framework enabling seamless Atlassian Cloud App integration with 99.9% uptime",
-        "Architected serverless APIs using AWS Lambda (NodeJS/Java) achieving sub-100ms response times and 99.9% availability",
-        "Implemented Infrastructure as Code with AWS CDK TypeScript, reducing deployment time by 70% and eliminating manual errors",
-        "Designed AWS infrastructure stack: CloudFront, API Gateway, Lambda, DynamoDB, and AppSync GraphQL for scalable microservices",
-        "Established CI/CD pipelines with Bitbucket and AWS, enabling zero-downtime deployments and 95% test coverage",
-        "Enhanced security posture implementing OWASP guidelines, preventing XSS, SSRF, and injection attacks across all applications",
-        "Led technical architecture for Appfire's JIRA and Confluence Server Apps serving 10M+ users globally",
-        "Mentored 8 junior developers and conducted code reviews, improving team velocity by 40% and code quality by 60%"
-      ]
+      "summary": "Leading development of Atlassian Cloud Apps with a focus on serverless architecture and AWS infrastructure."
     },
     {
       "name": "OpenText",
@@ -53,48 +40,21 @@
       "url": "https://opentext.com",
       "startDate": "2017-01-01",
       "endDate": "2019-08-31",
-      "summary": "Engineered enterprise-grade administration tools for analytics products with workflow automation and performance optimization.",
-      "highlights": [
-        "Built comprehensive administration tools for Recommind Axcelerate, Decisiv, and Perceptiv analytics products serving 500+ enterprise clients",
-        "Migrated CI/CD pipeline from GitLab to Jenkins, reducing build time by 50% and improving deployment reliability by 80%",
-        "Developed cross-platform management features using Spring Boot, Backbone.js, and custom UI frameworks for 24/7 operations",
-        "Implemented Camunda workflow engine processing 10K+ tasks daily with consistent tracking and process automation",
-        "Integrated LDAP and Active Directory authentication for 50K+ enterprise users across multiple domains",
-        "Optimized application performance achieving 60% improvement in page load times and 40% reduction in server resource usage"
-      ]
+      "summary": "Worked on enterprise-grade web applications for analytics product administration."
     },
     {
       "name": "Pramati Technologies Private Limited",
       "position": "Principal Engineer",
-      "url": "",
       "startDate": "2015-03-01",
       "endDate": "2017-01-31",
-      "summary": "Architected enterprise applications using modern Java technologies and frontend frameworks with focus on scalability.",
-      "highlights": [
-        "Architected enterprise applications using Spring Boot, Hibernate, and Ember.js handling 1M+ daily transactions",
-        "Built RESTful web services and single-page applications with responsive design supporting 10K+ concurrent users",
-        "Implemented MVC architecture using Spring and Hibernate, reducing database queries by 45% and improving response times by 35%",
-        "Managed database operations with DB2 and Cassandra using ORM frameworks, achieving 99.5% data consistency",
-        "Developed responsive interfaces using Ember.js and Angular, improving user engagement by 50% across platforms",
-        "Leveraged Java 8 features for performance optimization, reducing memory usage by 30% and CPU utilization by 25%",
-        "Established continuous integration with Jenkins achieving 90% automated test coverage and 95% deployment success rate"
-      ]
+      "summary": "Led development of enterprise applications using Java and modern frontend frameworks."
     },
     {
       "name": "Pramati Technologies Private Limited",
       "position": "Software Development Engineer III",
-      "url": "",
       "startDate": "2013-03-01",
       "endDate": "2015-03-31",
-      "summary": "Developed scalable applications using Grails framework and modern web technologies with focus on performance.",
-      "highlights": [
-        "Built scalable applications using Grails framework and GORM, handling 500K+ database operations daily",
-        "Developed RESTful services and integrated single-page applications achieving 200ms average response times",
-        "Implemented responsive web interfaces using modern JavaScript frameworks, improving mobile user experience by 60%",
-        "Optimized database queries and caching strategies, reducing page load times by 40% and server load by 35%",
-        "Collaborated with cross-functional teams delivering 15+ high-quality software solutions on schedule",
-        "Implemented automated testing achieving 85% code coverage and reducing bug reports by 50%"
-      ]
+      "summary": "Developed applications using Groovy/Grails and modern web technologies."
     },
     {
       "name": "Nokia",
@@ -102,11 +62,7 @@
       "url": "https://nokia.com",
       "startDate": "2011-03-01",
       "endDate": "2013-02-28",
-      "summary": "Worked on Nokia's Forcast Network Investments initiative as part of Self organizing network",
-      "highlights": [
-        "Worked on the different aspects of Self organizing network",
-        "worked on domains like configuration, fault management, performance management, security, etc."
-      ]
+      "summary": "Worked in telecommunications R&D across international teams."
     },
     {
       "name": "Nokia",
@@ -114,14 +70,7 @@
       "url": "https://nokia.com",
       "startDate": "2009-02-01",
       "endDate": "2011-02-28",
-      "summary": "Developed telecommunications technologies and protocols for mobile network infrastructure.",
-      "highlights": [
-        "Developed telecommunications protocols for 3G/UMTS networks, improving network efficiency by 35%",
-        "Engineered network solutions processing 1M+ concurrent connections with 99.8% reliability",
-        "Participated in Nokia's research initiatives contributing to 2 technical papers and 1 patent application",
-        "Optimized network algorithms reducing power consumption by 20% and improving signal coverage by 30%",
-        "Contributed to technical documentation and patent applications for network security and optimization"
-      ]
+      "summary": "Contributed to telecom technology research and protocol development."
     },
     {
       "name": "Sasken Communication Technologies Ltd",
@@ -129,17 +78,9 @@
       "url": "https://sasken.com",
       "startDate": "2006-10-01",
       "endDate": "2009-02-28",
-      "summary": "Developed embedded software solutions for communication devices and real-time systems.",
-      "highlights": [
-        "Developed embedded software for communication devices supporting 100K+ concurrent connections",
-        "Engineered real-time systems and communication protocols achieving sub-10ms response times",
-        "Optimized embedded code reducing memory usage by 40% and improving processing speed by 35%",
-        "Collaborated with hardware teams for system integration, delivering 5+ successful product launches",
-        "Implemented error handling and recovery mechanisms achieving 99.5% system reliability in production"
-      ]
+      "summary": "Developed software for embedded communication systems."
     }
   ],
-  "volunteer": [],
   "education": [
     {
       "institution": "Jawaharlal Nehru Technological University",
@@ -148,112 +89,32 @@
       "studyType": "Master of Science in Information Technology (MSIT)",
       "startDate": "2004-01-01",
       "endDate": "2006-12-31",
-      "score": "Distinction",
-      "courses": ["Software Engineering", "Database Systems", "Web Technologies", "Object-Oriented Programming"]
+      "score": "Distinction"
     },
     {
       "institution": "DVR College of Engineering & Technology",
-      "url": "",
       "area": "Computer Science & Engineering",
       "studyType": "Bachelor of Technology (B.Tech.)",
       "startDate": "1999-01-01",
       "endDate": "2003-12-31",
-      "score": "First Class",
-      "courses": ["Computer Science", "Data Structures", "Algorithms", "Computer Networks", "Operating Systems"]
+      "score": "First Class"
     }
   ],
-  "awards": [
-    {
-      "title": "Technical Excellence Award",
-      "date": "2022",
-      "awarder": "Appfire",
-      "summary": "Recognized for outstanding contributions to Appfire Connect Framework development"
-    },
-    {
-      "title": "Innovation Award",
-      "date": "2020",
-      "awarder": "Appfire",
-      "summary": "Awarded for innovative AWS serverless architecture implementation"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "AWS Certified Solutions Architect - Associate",
-      "date": "2023",
-      "issuer": "Amazon Web Services",
-      "url": "https://aws.amazon.com/certification/"
-    },
-    {
-      "name": "AWS Certified Developer - Associate",
-      "date": "2022",
-      "issuer": "Amazon Web Services",
-      "url": "https://aws.amazon.com/certification/"
-    },
-    {
-      "name": "Spring Framework Certification",
-      "date": "2021",
-      "issuer": "Pivotal Software",
-      "url": ""
-    },
-    {
-      "name": "OWASP Security Fundamentals",
-      "date": "2020",
-      "issuer": "OWASP Foundation",
-      "url": "https://owasp.org/"
-    },
-    {
-      "name": "React.js Advanced Certification",
-      "date": "2019",
-      "issuer": "Meta",
-      "url": ""
-    }
-  ],
-  "publications": [],
   "skills": [
     {
       "name": "Programming Languages",
       "level": "Expert",
-      "keywords": ["Java", "Groovy", "JavaScript", "Node.js", "TypeScript", "Python"]
+      "keywords": ["Java", "JavaScript", "Node.js", "TypeScript"]
     },
     {
       "name": "Frameworks & Libraries",
-      "level": "Expert", 
-      "keywords": ["Spring Boot", "Spring Framework", "Grails", "React.js", "Ember.js", "Angular", "Express.js"]
+      "level": "Expert",
+      "keywords": ["Spring Boot", "React.js"]
     },
     {
       "name": "Cloud & DevOps",
-      "level": "Expert",
-      "keywords": ["AWS", "Lambda", "DynamoDB", "CloudFront", "API Gateway", "AWS CDK", "Docker", "Kubernetes"]
-    },
-    {
-      "name": "Architecture & Design",
-      "level": "Expert",
-      "keywords": ["Microservices", "REST APIs", "GraphQL", "MVC", "Serverless", "Event-Driven Architecture"]
-    },
-    {
-      "name": "DevOps & CI/CD",
       "level": "Advanced",
-      "keywords": ["Jenkins", "Bitbucket", "Git", "GitHub Actions", "AWS CodePipeline", "Terraform"]
-    },
-    {
-      "name": "Testing & Quality",
-      "level": "Advanced",
-      "keywords": ["JUnit", "Jest", "Mockito", "Selenium", "SonarQube", "Code Coverage"]
-    },
-    {
-      "name": "Databases & Storage",
-      "level": "Advanced",
-      "keywords": ["DynamoDB", "MongoDB", "PostgreSQL", "DB2", "Cassandra", "Redis"]
-    },
-    {
-      "name": "Security & Compliance",
-      "level": "Advanced",
-      "keywords": ["OWASP", "XSS Prevention", "CSRF Protection", "JWT", "OAuth 2.0", "Security Headers"]
-    },
-    {
-      "name": "Tools & Platforms",
-      "level": "Advanced",
-      "keywords": ["JIRA", "Confluence", "Atlassian", "Postman", "Swagger", "Maven", "Gradle"]
+      "keywords": ["AWS", "Lambda", "DynamoDB"]
     }
   ],
   "languages": [
@@ -262,58 +123,45 @@
       "fluency": "Fluent"
     },
     {
-      "language": "Hindi", 
-      "fluency": "Native"
+      "language": "Hindi",
+      "fluency": "Fluent"
     },
     {
       "language": "Telugu",
       "fluency": "Native"
     }
   ],
-  "interests": [
+  "certificates": [
     {
-      "name": "Technology Innovation",
-      "keywords": ["Cloud Computing", "Serverless Architecture", "Open Source", "AI/ML", "Blockchain"]
+      "name": "Learning the OWASP Top 10",
+      "issuer": "LinkedIn Learning"
     },
     {
-      "name": "Professional Growth",
-      "keywords": ["Technical Leadership", "Mentoring", "Continuous Learning", "Community Building"]
+      "name": "Introduction to Data Science",
+      "issuer": "LinkedIn Learning"
     },
     {
-      "name": "Industry Trends",
-      "keywords": ["DevOps", "Microservices", "Event-Driven Architecture", "Platform Engineering"]
+      "name": "Machine Learning Foundations: A Case Study Approach",
+      "issuer": "Coursera"
+    },
+    {
+      "name": "The Data Scientist’s Toolbox",
+      "issuer": "Coursera"
+    },
+    {
+      "name": "A Life of Happiness and Fulfillment",
+      "issuer": "Coursera"
     }
   ],
+  "volunteer": [],
+  "awards": [],
+  "projects": [],
+  "publications": [],
+  "interests": [],
   "references": [],
-  "projects": [
-    {
-      "name": "Appfire Connect Framework",
-      "description": "Enterprise-grade framework for Atlassian Cloud App development",
-      "highlights": ["AWS Serverless", "TypeScript", "GraphQL", "Microservices"],
-      "keywords": ["AWS", "TypeScript", "GraphQL", "Serverless"],
-      "startDate": "2020-01-01",
-      "endDate": null,
-      "url": "",
-      "roles": ["Lead Architect", "Full Stack Developer"],
-      "entity": "Appfire",
-      "type": "Enterprise Framework"
-    },
-    {
-      "name": "Enterprise Analytics Platform",
-      "description": "Multi-tenant analytics platform for enterprise data processing",
-      "highlights": ["Spring Boot", "React", "Microservices", "Docker"],
-      "keywords": ["Java", "Spring Boot", "React", "Microservices"],
-      "startDate": "2017-06-01",
-      "endDate": "2019-08-31",
-      "url": "",
-      "roles": ["Technical Lead", "Backend Developer"],
-      "entity": "OpenText",
-      "type": "Enterprise Platform"
-    }
-  ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "version": "v1.0.0",
-    "lastModified": "2025-01-26T00:00:00.000Z"
+    "lastModified": "2025-07-26T00:00:00.000Z"
   }
 }
